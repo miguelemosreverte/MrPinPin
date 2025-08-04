@@ -1,16 +1,23 @@
-# Mr. Pinpin and Mr. PomPom - The Quest for the Owl's Glasses
+# The Chronicles of Mr. Pinpin and Mr. PomPom
 
 <div align="center">
-  <img src="02_Screenshot_2025-08-03_at_15.11.40.png" alt="Mr. Pinpin and Mr. PomPom meet the Wise Owl" width="600">
+  <img src="chapter1/02_Screenshot_2025-08-03_at_15.11.40.png" alt="Mr. Pinpin and Mr. PomPom meet the Wise Owl" width="600">
   
-  ### 🌐 [Read the Story Online](https://miguelemosreverte.github.io/MrPinPin/)
+  ### 🌐 [Read the Chronicles Online](https://miguelemosreverte.github.io/MrPinPin/)
   
-  A multilingual interactive children's story about two hedgehog brothers who help a wise owl find his lost glasses.
+  A multilingual interactive children's story series about two hedgehog brothers on magical adventures.
 </div>
 
-## 🌟 Story Overview
+## 🌟 Series Overview
 
-Join Mr. Pinpin (with his blue wizard hat and magical wand) and his brother Mr. PomPom (with his cheerful red cap) on a heartwarming adventure in the Enchanted Forest. When they meet a sad owl who has lost his glasses and cannot read his spell books, the brothers use magic, teamwork, and kindness to help their new friend.
+Follow the magical adventures of two hedgehog brothers - Mr. Pinpin (with his blue wizard hat and magical wand) and Mr. PomPom (with his cheerful red cap) - as they help friends throughout the Enchanted Forest, learning that the greatest magic comes from kindness and friendship.
+
+### 📖 Available Chapters
+
+1. **The Quest for the Owl's Glasses** - Help a wise owl find his lost glasses ✅
+2. **The Missing Star** - Journey to the Cloud Kingdom (Coming Soon) 🔄
+3. **The Silent Songbird** - Find the stolen musical notes (Coming Soon) 🔄
+4. **The Frozen Pond** - Solve the summer ice mystery (Coming Soon) 🔄
 
 ## 📚 Available Languages
 
@@ -37,9 +44,25 @@ Or run locally:
 
 ## 🛠️ Technical Details
 
-- **Images**: 20 PNG illustrations telling the complete story
-- **Generator**: Python script (`generate_historieta.py`) creates multilingual HTML from `story.md`
+### Project Structure
+```
+MrPinPin/
+├── index.html              # Main chapter selection page
+├── storyline.md           # Overall series storyline and planning
+├── chapter1/              # Chapter 1: The Quest for the Owl's Glasses
+│   ├── index.html         # Language selection for Chapter 1
+│   ├── story.md           # Story content in all languages
+│   ├── generate_historieta.py  # HTML generator script
+│   ├── historieta.*.html  # Generated story files
+│   └── *.png              # Chapter illustrations
+└── chapter2/              # Future chapter (when ready)
+```
+
+### Technical Features
+- **Images**: 20 PNG illustrations per chapter
+- **Generator**: Python script creates multilingual HTML from markdown
 - **Styling**: Comic book fonts (Kalam, Comic Neue) with responsive CSS grid layout
+- **Scalable**: Easy to add new chapters and languages
 
 ## 📝 Story Structure
 

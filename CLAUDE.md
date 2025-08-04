@@ -10,20 +10,25 @@ This is a multilingual children's story project featuring Mr. Pinpin and Mr. Pom
 - **Mr. PomPom**: Hedgehog with red hat, Mr. Pinpin's brother
 - **Wise Owl**: A scholarly owl who loses his glasses and needs help
 
-## Project Structure
+## Project Structure (Multi-Chapter)
 
 ```
 mr pinpin recover owl glasses/
-├── index.html                    # Language selection landing page
-├── historieta.es.html            # Spanish version
-├── historieta.en.html            # English version
-├── historieta.ru.html            # Russian version
-├── generate_historieta.py        # Script to generate HTML from markdown
-├── story.md                      # Source story in all languages
+├── index.html                    # Main chapter selection page
+├── storyline.md                  # Overall series narrative and planning
 ├── README.md                     # GitHub repository documentation
 ├── CLAUDE.md                     # This file - AI assistant reference
 ├── .gitignore                    # Git ignore file
-└── [20 PNG files]               # Story illustrations (02_Screenshot...png through 21_Screenshot...png)
+└── chapter1/                     # Chapter 1: The Quest for the Owl's Glasses
+    ├── index.html               # Language selection for this chapter
+    ├── story.md                 # Source story in all languages
+    ├── generate_historieta.py   # Script to generate HTML from markdown
+    ├── historieta.es.html       # Spanish version
+    ├── historieta.en.html       # English version
+    ├── historieta.ru.html       # Russian version
+    └── [20 PNG files]          # Story illustrations (02_Screenshot...png through 21_Screenshot...png)
+
+Future chapters will follow the same structure in chapter2/, chapter3/, etc.
 ```
 
 ## Key Technical Details
@@ -43,10 +48,11 @@ mr pinpin recover owl glasses/
 
 ## Workflow
 
-### To Generate HTML Files from story.md:
+### To Generate HTML Files for a Chapter:
 
 ```bash
-cd "/Users/miguel_lemos/Desktop/mr pinpin recover owl glasses"
+# Navigate to the specific chapter folder
+cd "/Users/miguel_lemos/Desktop/mr pinpin recover owl glasses/chapter1"
 python3 generate_historieta.py
 ```
 
@@ -54,6 +60,16 @@ This will create/update:
 - historieta.es.html
 - historieta.en.html
 - historieta.ru.html
+
+### To Add a New Chapter:
+
+1. Create new chapter folder: `mkdir chapter2`
+2. Copy generator script: `cp chapter1/generate_historieta.py chapter2/`
+3. Create `story.md` with the new story content
+4. Add images (PNG files) to the chapter folder
+5. Create `index.html` for language selection
+6. Update root `index.html` to link to new chapter
+7. Update `storyline.md` with chapter status
 
 ### To Test Locally:
 

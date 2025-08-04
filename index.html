@@ -3,164 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Pinpin and Mr. PomPom - The Quest for the Owl's Glasses</title>
+    <title>The Chronicles of Mr. Pinpin and Mr. PomPom</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Comic+Neue:wght@400;700&display=swap');
         
         body {
             font-family: 'Kalam', 'Comic Neue', 'Comic Sans MS', cursive;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             background-color: #f5f5f5;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             background-image: 
-                radial-gradient(circle at 20% 80%, rgba(255, 200, 100, 0.2) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(100, 200, 255, 0.2) 0%, transparent 50%);
+                radial-gradient(circle at 20% 80%, rgba(255, 200, 100, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(100, 200, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(200, 100, 255, 0.1) 0%, transparent 50%);
         }
         
-        .container {
+        .header {
             text-align: center;
-            background-color: white;
-            padding: 60px 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: 20px;
+            max-width: 800px;
+            margin: 0 auto 50px;
         }
         
         h1 {
             color: #333;
-            font-size: 36px;
-            margin-bottom: 10px;
+            font-size: 42px;
+            margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-            line-height: 1.3;
-        }
-        
-        h2 {
-            color: #666;
-            font-size: 24px;
-            margin-bottom: 40px;
-            font-weight: 400;
+            line-height: 1.2;
         }
         
         .subtitle {
-            color: #777;
-            font-size: 18px;
-            margin-bottom: 50px;
+            color: #666;
+            font-size: 20px;
+            margin-bottom: 30px;
             line-height: 1.5;
         }
         
-        .language-selection {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         
-        .language-button {
-            display: inline-block;
-            padding: 20px 40px;
-            font-size: 22px;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            width: 280px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-        
-        .language-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .spanish {
-            background: linear-gradient(135deg, #ff6b6b, #c44569);
-        }
-        
-        .english {
-            background: linear-gradient(135deg, #4ecdc4, #44a08d);
-        }
-        
-        .russian {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-        }
-        
-        .language-name {
-            display: block;
-            font-size: 16px;
-            opacity: 0.9;
-            margin-top: 5px;
-            font-weight: 400;
-        }
-        
-        .hero-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: 0 auto 30px;
-            object-fit: cover;
-            border: 5px solid #f0f0f0;
+        .chapter-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
         
-        @media (max-width: 600px) {
-            .container {
-                padding: 40px 20px;
-            }
-            
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .chapter-card.available {
+            cursor: pointer;
+        }
+        
+        .chapter-card.coming-soon {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+        
+        .chapter-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .chapter-content {
+            padding: 25px;
+        }
+        
+        .chapter-number {
+            color: #999;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        
+        .chapter-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .chapter-description {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        .chapter-status {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .status-available {
+            background-color: #4ecdc4;
+            color: white;
+        }
+        
+        .status-coming-soon {
+            background-color: #f0f0f0;
+            color: #999;
+        }
+        
+        .hero-characters {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .character-badge {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
             h1 {
-                font-size: 28px;
+                font-size: 32px;
             }
             
-            h2 {
-                font-size: 20px;
+            .subtitle {
+                font-size: 18px;
             }
             
-            .language-button {
-                width: 240px;
-                font-size: 20px;
-                padding: 18px 30px;
-            }
-            
-            .hero-image {
-                width: 150px;
-                height: 150px;
+            .chapters-grid {
+                grid-template-columns: 1fr;
+                padding: 0;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="02_Screenshot_2025-08-03_at_15.11.40.png" alt="Mr. Pinpin and Mr. PomPom meet the Wise Owl" class="hero-image">
+    <div class="header">
+        <div class="hero-characters">
+            <img src="chapter1/02_Screenshot_2025-08-03_at_15.11.40.png" alt="Mr. Pinpin" class="character-badge">
+        </div>
         
-        <h1>Las Aventuras de Mr. Pinpin y Mr. PomPom</h1>
-        <h2>La Búsqueda de los Anteojos del Búho</h2>
+        <h1>The Chronicles of Mr. Pinpin and Mr. PomPom</h1>
         
         <p class="subtitle">
-            Choose your language to read the magical story of two hedgehog brothers<br>
-            who help a wise owl find his lost glasses
+            Join two magical hedgehog brothers on their adventures through the Enchanted Forest,<br>
+            where kindness and friendship are the most powerful magic of all
         </p>
+    </div>
+    
+    <div class="chapters-grid">
+        <a href="chapter1/index.html" class="chapter-card available">
+            <img src="chapter1/02_Screenshot_2025-08-03_at_15.11.40.png" alt="Chapter 1 Cover" class="chapter-image">
+            <div class="chapter-content">
+                <div class="chapter-number">Chapter 1</div>
+                <h2 class="chapter-title">The Quest for the Owl's Glasses</h2>
+                <p class="chapter-description">
+                    Help Mr. Pinpin and Mr. PomPom find the Wise Owl's lost glasses in their first magical adventure.
+                </p>
+                <span class="chapter-status status-available">Available Now</span>
+            </div>
+        </a>
         
-        <div class="language-selection">
-            <a href="historieta.es.html" class="language-button spanish">
-                Español
-                <span class="language-name">Spanish</span>
-            </a>
-            
-            <a href="historieta.en.html" class="language-button english">
-                English
-                <span class="language-name">English</span>
-            </a>
-            
-            <a href="historieta.ru.html" class="language-button russian">
-                Русский
-                <span class="language-name">Russian</span>
-            </a>
+        <div class="chapter-card coming-soon">
+            <div style="height: 200px; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center;">
+                <span style="color: white; font-size: 48px;">🌟</span>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-number">Chapter 2</div>
+                <h2 class="chapter-title">The Missing Star</h2>
+                <p class="chapter-description">
+                    The North Star has vanished! Journey to the Cloud Kingdom to solve this celestial mystery.
+                </p>
+                <span class="chapter-status status-coming-soon">Coming Soon</span>
+            </div>
+        </div>
+        
+        <div class="chapter-card coming-soon">
+            <div style="height: 200px; background: linear-gradient(135deg, #f093fb, #f5576c); display: flex; align-items: center; justify-content: center;">
+                <span style="color: white; font-size: 48px;">🎵</span>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-number">Chapter 3</div>
+                <h2 class="chapter-title">The Silent Songbird</h2>
+                <p class="chapter-description">
+                    A magical songbird has lost her voice. Can the brothers find the stolen notes in time?
+                </p>
+                <span class="chapter-status status-coming-soon">Coming Soon</span>
+            </div>
+        </div>
+        
+        <div class="chapter-card coming-soon">
+            <div style="height: 200px; background: linear-gradient(135deg, #4facfe, #00f2fe); display: flex; align-items: center; justify-content: center;">
+                <span style="color: white; font-size: 48px;">❄️</span>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-number">Chapter 4</div>
+                <h2 class="chapter-title">The Frozen Pond</h2>
+                <p class="chapter-description">
+                    When the forest pond freezes in summer, the brothers must uncover who cast this unseasonable spell.
+                </p>
+                <span class="chapter-status status-coming-soon">Coming Soon</span>
+            </div>
         </div>
     </div>
 </body>
