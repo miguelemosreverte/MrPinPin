@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Aventuras de Mr. Pinpin y Mr. PomPom - La Búsqueda de los Anteojos del Búho</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Comic+Neue:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Kalam', 'Comic Neue', 'Comic Sans MS', cursive;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        
+        .page {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            page-break-after: always;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #333;
+            font-weight: 700;
+            font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .comic-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .comic-panel {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .comic-panel:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .hero-panel {
+            grid-column: span 2;
+            grid-row: span 2;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .hero-panel .panel-image {
+            width: 100%;
+            height: auto;
+            flex-grow: 1;
+            object-fit: cover;
+        }
+        
+        .hero-panel .panel-caption {
+            font-size: 19px;
+            padding: 20px;
+            min-height: 80px;
+            font-weight: 400;
+        }
+        
+        .panel-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .panel-caption {
+            padding: 15px;
+            font-size: 15px;
+            text-align: center;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            flex-grow: 1;
+            line-height: 1.7;
+            letter-spacing: 0.3px;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                padding: 20px;
+            }
+            .comic-panel {
+                box-shadow: none !important;
+                transform: none !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .comic-grid {
+                grid-template-columns: 1fr;
+            }
+            .page {
+                padding: 20px;
+            }
+            .hero-panel {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1 class="page-header">Las Aventuras de Mr. Pinpin y Mr. PomPom - La Búsqueda de los Anteojos del Búho - Página 1</h1>
+        <div class="comic-grid">
+            <div class="comic-panel hero-panel">
+                <img src="02_Screenshot_2025-08-03_at_15.11.40.png" alt="Era una hermosa mañana en el Bosque Encantado cuan..." class="panel-image">
+                <div class="panel-caption">Era una hermosa mañana en el Bosque Encantado cuando los hermanos erizo, Mr. Pinpin con su sombrero azul de estrellas y su varita mágica, y Mr. PomPom con su alegre gorro rojo, paseaban entre los árboles dorados. De repente, escucharon un suspiro triste. "¿Quién anda ahí?", preguntó Mr. PomPom. Desde su rama, el Búho Sabio los miraba con ojos entrecerrados. "Oh, pequeños amigos," dijo el búho, "he perdido mis anteojos y sin ellos no puedo leer mis libros de hechizos."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="03_Screenshot_2025-08-03_at_15.11.50.png" alt=""¡No te preocupes, Señor Búho! ¡Nosotros te ayudar..." class="panel-image">
+                <div class="panel-caption">"¡No te preocupes, Señor Búho! ¡Nosotros te ayudaremos!" exclamó Mr. Pinpin con determinación, levantando su varita mágica que brillaba suavemente en la luz de la mañana. Mr. PomPom asintió con entusiasmo. "Sí, somos muy buenos encontrando cosas perdidas. Una vez encontré la bellota favorita de mi prima en todo el bosque." El búho parpadeó esperanzado mientras los dos hermanos comenzaban a buscar entre las hojas doradas que cubrían el suelo del bosque.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="04_Screenshot_2025-08-03_at_15.12.11.png" alt=""Recuerdo que estaba leyendo justo aquí cuando sen..." class="panel-image">
+                <div class="panel-caption">"Recuerdo que estaba leyendo justo aquí cuando sentí que se me resbalaban," dijo el Búho Sabio, señalando con su ala hacia un montón de hojas cerca de las raíces del gran roble. "Pero mis ojos ya no son lo que eran sin mis anteojos." Mr. Pinpin se acercó al lugar indicado, su varita mágica en mano. "Hmm, déjame pensar... ¿Qué hechizo sería bueno para encontrar objetos perdidos?" murmuró, mientras Mr. PomPom ya estaba escarbando entre las hojas con sus pequeñas patitas.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="05_Screenshot_2025-08-03_at_15.12.18.png" alt=""¡Ya sé! ¡Usaré el hechizo de 'Revelación de lo Oc..." class="panel-image">
+                <div class="panel-caption">"¡Ya sé! ¡Usaré el hechizo de 'Revelación de lo Oculto'!" anunció Mr. Pinpin con confianza. Agitó su varita en el aire dibujando una estrella brillante y pronunció: "¡Perdidus Encontradus Volarus!" De repente, un destello dorado iluminó el claro del bosque, y para asombro de todos, los anteojos del búho aparecieron flotando mágicamente en el aire, brillando con una luz suave y cálida. "¡Funcionó!" gritó Mr. PomPom dando saltitos de alegría.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="06_Screenshot_2025-08-03_at_15.12.22.png" alt="El Búho Sabio abrió mucho los ojos, maravillado po..." class="panel-image">
+                <div class="panel-caption">El Búho Sabio abrió mucho los ojos, maravillado por la visión de sus queridos anteojos flotando en el aire como una pequeña estrella dorada. "¡Oh, mis preciosos anteojos! ¡Los extrañaba tanto!" exclamó con emoción. "Sin ellos, no podía leer mis libros de pociones ni mis mapas del cielo estrellado." Mr. Pinpin mantuvo su varita en alto, concentrado en mantener el hechizo estable. "Tranquilo, Señor Búho, los guiaremos hasta usted," dijo con una sonrisa amable.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="07_Screenshot_2025-08-03_at_15.12.25.png" alt=""Vamos, anteojos, vayan con su dueño," susurró Mr...." class="panel-image">
+                <div class="panel-caption">"Vamos, anteojos, vayan con su dueño," susurró Mr. Pinpin mientras movía su varita en círculos suaves. Los anteojos comenzaron a flotar lentamente hacia el búho, danzando en el aire matutino como una mariposa dorada. Mr. PomPom, no queriendo quedarse atrás, se puso de puntillas y sopló suavemente hacia los anteojos. "¡Yo también estoy ayudando!" dijo orgulloso. "Mi aliento mágico de erizo los empuja en la dirección correcta." El búho observaba con ansiedad y gratitud cómo sus preciados anteojos se acercaban cada vez más.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="08_Screenshot_2025-08-03_at_15.12.26.png" alt="Los anteojos dorados se acercaban graciosamente al..." class="panel-image">
+                <div class="panel-caption">Los anteojos dorados se acercaban graciosamente al búho, quien los miraba sin parpadear, como si temiera que desaparecieran si apartaba la vista. "Ya casi están aquí," dijo en voz baja, con el corazón lleno de esperanza. Mr. Pinpin mantuvo su concentración, con pequeñas gotitas de sudor en su frente por el esfuerzo mágico. "Solo un poco más," murmuró. Mr. PomPom aplaudía suavemente para animar a su hermano. "Tú puedes, Pinpin. Eres el mejor mago erizo del bosque."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="09_Screenshot_2025-08-03_at_15.12.28.png" alt="Con un movimiento elegante, el Búho Sabio extendió..." class="panel-image">
+                <div class="panel-caption">Con un movimiento elegante, el Búho Sabio extendió sus amplias alas marrones, creando una suave brisa que hizo danzar las hojas alrededor. "¡Ya casi los tengo!" exclamó emocionado, estirando su ala derecha hacia los anteojos brillantes. La luz del sol matutino se filtraba entre las ramas, creando un momento mágico mientras los anteojos se acercaban lentamente a su destino. Mr. Pinpin y Mr. PomPom contenían la respiración, observando con anticipación el momento crucial del reencuentro.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="10_Screenshot_2025-08-03_at_15.12.30.png" alt="¡Y sucedió! Con la delicadeza de una pluma cayendo..." class="panel-image">
+                <div class="panel-caption">¡Y sucedió! Con la delicadeza de una pluma cayendo, los anteojos dorados se posaron perfectamente sobre el pico del Búho Sabio. "¡Lo logramos!" gritaron Mr. Pinpin y Mr. PomPom al unísono, saltando de alegría. El búho permaneció muy quieto por un momento, como si no pudiera creer que sus queridos anteojos habían regresado. Una lágrima de felicidad brilló en su ojo derecho. "Oh, mis queridos amigos," susurró emocionado, "no sé cómo agradecerles."</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <h1 class="page-header">Las Aventuras de Mr. Pinpin y Mr. PomPom - La Búsqueda de los Anteojos del Búho - Página 2</h1>
+        <div class="comic-grid">
+            <div class="comic-panel">
+                <img src="11_Screenshot_2025-08-03_at_15.12.48.png" alt="El Búho Sabio, ahora con sus anteojos perfectament..." class="panel-image">
+                <div class="panel-caption">El Búho Sabio, ahora con sus anteojos perfectamente colocados, sonreía de oreja a oreja (o de pluma a pluma, como dirían los búhos). Sus ojos brillaban con renovada claridad detrás de los cristales redondos. "Ahora puedo ver todo con claridad nuevamente," dijo feliz, mirando a los hermanos erizo. "Puedo ver sus hermosos sombreros, la varita mágica de Mr. Pinpin brillando con poder, y los ojos bondadosos de Mr. PomPom. ¡Qué mañana tan maravillosa!" Los rayos del sol hacían que sus anteojos dorados resplandecieran como dos pequeños soles.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="12_Screenshot_2025-08-03_at_15.12.55.png" alt="De repente, el Búho Sabio desplegó sus alas y se e..." class="panel-image">
+                <div class="panel-caption">De repente, el Búho Sabio desplegó sus alas y se elevó en el aire, dando una vuelta de alegría alrededor del claro del bosque. "¡Puedo volar con precisión otra vez!" exclamó jubiloso. "Sin mis anteojos, tenía miedo de chocar con las ramas." Mientras volaba, sus plumas brillaban en la luz dorada de la mañana. Mr. Pinpin y Mr. PomPom aplaudían desde abajo, sus pequeñas patitas haciendo un alegre tap-tap-tap contra el suelo del bosque. "¡Bravo, Señor Búho!" gritaron los hermanos.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="13_Screenshot_2025-08-03_at_15.12.58.png" alt="El Búho Sabio aterrizó graciosamente en una rama m..." class="panel-image">
+                <div class="panel-caption">El Búho Sabio aterrizó graciosamente en una rama más baja, agitando sus alas con entusiasmo mientras miraba a los hermanos erizo con profundo afecto. "Queridos Mr. Pinpin y Mr. PomPom," dijo con voz solemne pero cálida, "han hecho por mí algo que nunca olvidaré. No solo me devolvieron mis anteojos, sino que me mostraron la verdadera amistad." Sus alas se extendían y plegaban en un gesto que parecía un abrazo desde la distancia. "En mis muchos años de vida, he aprendido que los actos de bondad son la magia más poderosa de todas."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="14_Screenshot_2025-08-03_at_15.13.02.png" alt="Los tres amigos permanecieron en silencio por un m..." class="panel-image">
+                <div class="panel-caption">Los tres amigos permanecieron en silencio por un momento, disfrutando de la cálida brisa matutina y el canto de los pájaros que celebraban el nuevo día. Mr. PomPom fue el primero en hablar: "Señor Búho, ¿qué estaba leyendo cuando perdió sus anteojos?" El búho sonrió. "Estaba estudiando un antiguo libro sobre la amistad verdadera. Qué curioso que hoy haya aprendido más sobre ese tema de ustedes dos que de cualquier libro." Mr. Pinpin bajó su varita, que aún emitía un suave resplandor azulado, y sonrió tímidamente.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="15_Screenshot_2025-08-03_at_15.13.04.png" alt="El Búho Sabio voló suavemente hasta posarse en el ..." class="panel-image">
+                <div class="panel-caption">El Búho Sabio voló suavemente hasta posarse en el suelo cerca de los hermanos erizo, algo inusual para un búho tan distinguido. "Quiero mirarlos a los ojos cuando les agradezca," dijo con ternura. Se inclinó ceremoniosamente, sus anteojos dorados centelleando. "Mr. Pinpin, tu magia es extraordinaria, pero tu corazón bondadoso es aún más impresionante. Y Mr. PomPom, tu entusiasmo y apoyo fueron esenciales. Juntos, forman un equipo perfecto." Los hermanos se miraron con orgullo y luego al búho con modestia.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="16_Screenshot_2025-08-03_at_15.13.06.png" alt=""Fue un placer ayudarlo, Señor Búho," dijo Mr. Pin..." class="panel-image">
+                <div class="panel-caption">"Fue un placer ayudarlo, Señor Búho," dijo Mr. Pinpin, sus mejillas sonrojadas de felicidad bajo su sombrero azul estrellado. "Mi magia funciona mejor cuando se usa para ayudar a otros." Mr. PomPom asintió vigorosamente, su gorro rojo balanceándose con el movimiento. "Sí, y fue muy divertido. ¡Fue como una aventura de las que leíamos en los cuentos!" El búho los miró con ternura. "Ustedes dos no solo encontraron mis anteojos, sino que iluminaron mi mañana con su bondad."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="17_Screenshot_2025-08-03_at_15.13.10.png" alt=""Antes de que se vayan," dijo el Búho Sabio con to..." class="panel-image">
+                <div class="panel-caption">"Antes de que se vayan," dijo el Búho Sabio con tono misterioso, "quiero compartir con ustedes un secreto que aprendí hace muchos años." Los hermanos erizo se acercaron, sus ojos brillando con curiosidad. "La verdadera magia," continuó el búho, ajustándose los anteojos, "no viene solo de las varitas o los hechizos. Viene del corazón. Mr. Pinpin, tu varita es poderosa porque tu deseo de ayudar es genuino. Y Mr. PomPom, tu apoyo y alegría multiplican cualquier magia. Nunca olviden esto."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="18_Screenshot_2025-08-03_at_15.13.12.png" alt="El sol ya estaba más alto en el cielo, bañando el ..." class="panel-image">
+                <div class="panel-caption">El sol ya estaba más alto en el cielo, bañando el bosque en una luz dorada aún más brillante. El Búho Sabio miró a su alrededor con deleite. "Ah, qué hermoso es poder ver cada hoja, cada flor, cada rayo de sol," suspiró felizmente. "Y lo más hermoso que veo son dos corazones nobles en dos pequeños cuerpos de erizo." Mr. Pinpin y Mr. PomPom intercambiaron miradas llenas de felicidad. Habían salido a pasear esa mañana y terminaron haciendo un nuevo amigo y viviendo una verdadera aventura mágica.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="19_Screenshot_2025-08-03_at_15.13.17.png" alt=""Saben," dijo el Búho Sabio mientras los tres disf..." class="panel-image">
+                <div class="panel-caption">"Saben," dijo el Búho Sabio mientras los tres disfrutaban de la hermosa mañana juntos, "tengo una biblioteca llena de libros mágicos en mi roble. Ahora que puedo ver de nuevo, me encantaría compartir algunas historias con ustedes. ¿Les gustaría visitarme de vez en cuando?" Los ojos de los hermanos se iluminaron con emoción. "¡Sí, sí, sí!" exclamó Mr. PomPom dando saltitos. "Me encantan las historias mágicas." Mr. Pinpin asintió entusiasmado. "Y tal vez pueda aprender nuevos hechizos para ayudar a más amigos del bosque."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="20_Screenshot_2025-08-03_at_15.13.25.png" alt=""Entonces es una promesa," declaró el Búho Sabio s..." class="panel-image">
+                <div class="panel-caption">"Entonces es una promesa," declaró el Búho Sabio solemnemente, extendiendo su ala derecha. "Yo, el Búho Sabio del Gran Roble, prometo ser su amigo para siempre. Mi hogar siempre estará abierto para ustedes, y compartiré con gusto mi sabiduría y mis historias." Mr. Pinpin y Mr. PomPom extendieron sus pequeñas patitas para tocar el ala del búho en un gesto de amistad eterna. "Y nosotros prometemos visitarlo y ser sus amigos para siempre," dijeron los hermanos al unísono. El bosque parecía brillar aún más, como si la naturaleza misma celebrara esta nueva amistad.</div>
+            </div>
+            <div class="comic-panel hero-panel">
+                <img src="21_Screenshot_2025-08-03_at_15.13.45.png" alt="Y así, en aquella hermosa mañana dorada en el Bosq..." class="panel-image">
+                <div class="panel-caption">Y así, en aquella hermosa mañana dorada en el Bosque Encantado, nació una amistad que duraría para siempre. Mr. Pinpin guardó su varita mágica, que ahora brillaba con una luz más cálida, sabiendo que había usado su poder para algo verdaderamente especial. Mr. PomPom no podía dejar de sonreír, emocionado por todas las historias que escucharían en el futuro. Y el Búho Sabio, con sus anteojos dorados firmemente en su lugar, supo que había ganado algo más valioso que la vista: había encontrado verdaderos amigos. El sol continuó su viaje por el cielo, pero en los corazones de los tres amigos, siempre sería la mañana mágica cuando la bondad, la magia y la amistad se unieron en una aventura inolvidable. Fin.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

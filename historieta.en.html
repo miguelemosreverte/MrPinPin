@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Adventures of Mr. Pinpin and Mr. PomPom - The Quest for the Owl's Glasses</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Comic+Neue:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Kalam', 'Comic Neue', 'Comic Sans MS', cursive;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        
+        .page {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            page-break-after: always;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #333;
+            font-weight: 700;
+            font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .comic-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .comic-panel {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .comic-panel:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .hero-panel {
+            grid-column: span 2;
+            grid-row: span 2;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .hero-panel .panel-image {
+            width: 100%;
+            height: auto;
+            flex-grow: 1;
+            object-fit: cover;
+        }
+        
+        .hero-panel .panel-caption {
+            font-size: 19px;
+            padding: 20px;
+            min-height: 80px;
+            font-weight: 400;
+        }
+        
+        .panel-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .panel-caption {
+            padding: 15px;
+            font-size: 15px;
+            text-align: center;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            flex-grow: 1;
+            line-height: 1.7;
+            letter-spacing: 0.3px;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                padding: 20px;
+            }
+            .comic-panel {
+                box-shadow: none !important;
+                transform: none !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .comic-grid {
+                grid-template-columns: 1fr;
+            }
+            .page {
+                padding: 20px;
+            }
+            .hero-panel {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1 class="page-header">The Adventures of Mr. Pinpin and Mr. PomPom - The Quest for the Owl's Glasses - Page 1</h1>
+        <div class="comic-grid">
+            <div class="comic-panel hero-panel">
+                <img src="02_Screenshot_2025-08-03_at_15.11.40.png" alt="It was a beautiful morning in the Enchanted Forest..." class="panel-image">
+                <div class="panel-caption">It was a beautiful morning in the Enchanted Forest when the hedgehog brothers, Mr. Pinpin with his blue star-decorated wizard hat and magical wand, and Mr. PomPom with his cheerful red cap, were strolling among the golden trees. Suddenly, they heard a sad sigh. "Who's there?" asked Mr. PomPom. From his branch, the Wise Owl looked down at them with squinting eyes. "Oh, little friends," said the owl, "I've lost my glasses and without them I cannot read my spell books."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="03_Screenshot_2025-08-03_at_15.11.50.png" alt=""Don't worry, Mr. Owl! We'll help you!" exclaimed ..." class="panel-image">
+                <div class="panel-caption">"Don't worry, Mr. Owl! We'll help you!" exclaimed Mr. Pinpin with determination, raising his magical wand which glowed softly in the morning light. Mr. PomPom nodded enthusiastically. "Yes, we're very good at finding lost things. Once I found my cousin's favorite acorn in the whole forest." The owl blinked hopefully as the two brothers began searching among the golden leaves covering the forest floor.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="04_Screenshot_2025-08-03_at_15.12.11.png" alt=""I remember I was reading right here when I felt t..." class="panel-image">
+                <div class="panel-caption">"I remember I was reading right here when I felt them slip off," said the Wise Owl, pointing with his wing toward a pile of leaves near the roots of the great oak tree. "But my eyes aren't what they used to be without my glasses." Mr. Pinpin approached the indicated spot, his magical wand in hand. "Hmm, let me think... What spell would be good for finding lost objects?" he murmured, while Mr. PomPom was already digging through the leaves with his little paws.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="05_Screenshot_2025-08-03_at_15.12.18.png" alt=""I know! I'll use the 'Reveal the Hidden' spell!" ..." class="panel-image">
+                <div class="panel-caption">"I know! I'll use the 'Reveal the Hidden' spell!" announced Mr. Pinpin confidently. He waved his wand in the air drawing a bright star and pronounced: "Perdidus Encontradus Volarus!" Suddenly, a golden flash illuminated the forest clearing, and to everyone's amazement, the owl's glasses appeared floating magically in the air, glowing with a soft, warm light. "It worked!" shouted Mr. PomPom, hopping with joy.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="06_Screenshot_2025-08-03_at_15.12.22.png" alt="The Wise Owl opened his eyes wide, marveling at th..." class="panel-image">
+                <div class="panel-caption">The Wise Owl opened his eyes wide, marveling at the sight of his beloved glasses floating in the air like a small golden star. "Oh, my precious glasses! I missed them so much!" he exclaimed with emotion. "Without them, I couldn't read my potion books or my starry sky maps." Mr. Pinpin kept his wand raised, focused on keeping the spell stable. "Don't worry, Mr. Owl, we'll guide them to you," he said with a kind smile.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="07_Screenshot_2025-08-03_at_15.12.25.png" alt=""Come on, glasses, go to your owner," whispered Mr..." class="panel-image">
+                <div class="panel-caption">"Come on, glasses, go to your owner," whispered Mr. Pinpin as he moved his wand in gentle circles. The glasses began to float slowly toward the owl, dancing in the morning air like a golden butterfly. Mr. PomPom, not wanting to be left out, stood on his tiptoes and blew gently toward the glasses. "I'm helping too!" he said proudly. "My magical hedgehog breath pushes them in the right direction." The owl watched with anxiety and gratitude as his precious glasses came closer and closer.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="08_Screenshot_2025-08-03_at_15.12.26.png" alt="The golden glasses gracefully approached the owl, ..." class="panel-image">
+                <div class="panel-caption">The golden glasses gracefully approached the owl, who watched them without blinking, as if afraid they would disappear if he looked away. "They're almost here," he said softly, his heart full of hope. Mr. Pinpin maintained his concentration, with small beads of sweat on his forehead from the magical effort. "Just a little more," he murmured. Mr. PomPom clapped softly to encourage his brother. "You can do it, Pinpin. You're the best hedgehog wizard in the forest."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="09_Screenshot_2025-08-03_at_15.12.28.png" alt="With an elegant movement, the Wise Owl extended hi..." class="panel-image">
+                <div class="panel-caption">With an elegant movement, the Wise Owl extended his broad brown wings, creating a gentle breeze that made the leaves dance around. "I almost have them!" he exclaimed excitedly, stretching his right wing toward the glowing glasses. The morning sunlight filtered through the branches, creating a magical moment as the glasses slowly approached their destination. Mr. Pinpin and Mr. PomPom held their breath, watching with anticipation the crucial moment of reunion.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="10_Screenshot_2025-08-03_at_15.12.30.png" alt="And it happened! With the delicacy of a falling fe..." class="panel-image">
+                <div class="panel-caption">And it happened! With the delicacy of a falling feather, the golden glasses landed perfectly on the Wise Owl's beak. "We did it!" shouted Mr. Pinpin and Mr. PomPom in unison, jumping for joy. The owl remained very still for a moment, as if he couldn't believe his beloved glasses had returned. A tear of happiness glistened in his right eye. "Oh, my dear friends," he whispered emotionally, "I don't know how to thank you."</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <h1 class="page-header">The Adventures of Mr. Pinpin and Mr. PomPom - The Quest for the Owl's Glasses - Page 2</h1>
+        <div class="comic-grid">
+            <div class="comic-panel">
+                <img src="11_Screenshot_2025-08-03_at_15.12.48.png" alt="The Wise Owl, now with his glasses perfectly place..." class="panel-image">
+                <div class="panel-caption">The Wise Owl, now with his glasses perfectly placed, was smiling from ear to ear (or from feather to feather, as owls would say). His eyes sparkled with renewed clarity behind the round lenses. "Now I can see everything clearly again," he said happily, looking at the hedgehog brothers. "I can see your beautiful hats, Mr. Pinpin's magical wand glowing with power, and Mr. PomPom's kind eyes. What a wonderful morning!" The sun's rays made his golden glasses shine like two little suns.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="12_Screenshot_2025-08-03_at_15.12.55.png" alt="Suddenly, the Wise Owl spread his wings and rose i..." class="panel-image">
+                <div class="panel-caption">Suddenly, the Wise Owl spread his wings and rose into the air, taking a joyful lap around the forest clearing. "I can fly with precision again!" he exclaimed jubilantly. "Without my glasses, I was afraid of bumping into branches." As he flew, his feathers gleamed in the golden morning light. Mr. Pinpin and Mr. PomPom applauded from below, their little paws making a cheerful tap-tap-tap against the forest floor. "Bravo, Mr. Owl!" shouted the brothers.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="13_Screenshot_2025-08-03_at_15.12.58.png" alt="The Wise Owl landed gracefully on a lower branch, ..." class="panel-image">
+                <div class="panel-caption">The Wise Owl landed gracefully on a lower branch, flapping his wings enthusiastically while looking at the hedgehog brothers with deep affection. "Dear Mr. Pinpin and Mr. PomPom," he said with a solemn but warm voice, "you have done something for me that I will never forget. Not only did you return my glasses, but you showed me true friendship." His wings extended and folded in a gesture that seemed like a hug from afar. "In my many years of life, I have learned that acts of kindness are the most powerful magic of all."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="14_Screenshot_2025-08-03_at_15.13.02.png" alt="The three friends remained silent for a moment, en..." class="panel-image">
+                <div class="panel-caption">The three friends remained silent for a moment, enjoying the warm morning breeze and the singing of birds celebrating the new day. Mr. PomPom was the first to speak: "Mr. Owl, what were you reading when you lost your glasses?" The owl smiled. "I was studying an ancient book about true friendship. How curious that today I learned more about that subject from you two than from any book." Mr. Pinpin lowered his wand, which still emitted a soft blue glow, and smiled shyly.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="15_Screenshot_2025-08-03_at_15.13.04.png" alt="The Wise Owl flew gently down to land on the groun..." class="panel-image">
+                <div class="panel-caption">The Wise Owl flew gently down to land on the ground near the hedgehog brothers, something unusual for such a distinguished owl. "I want to look you in the eyes when I thank you," he said tenderly. He bowed ceremoniously, his golden glasses twinkling. "Mr. Pinpin, your magic is extraordinary, but your kind heart is even more impressive. And Mr. PomPom, your enthusiasm and support were essential. Together, you make a perfect team." The brothers looked at each other with pride and then at the owl with modesty.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="16_Screenshot_2025-08-03_at_15.13.06.png" alt=""It was a pleasure to help you, Mr. Owl," said Mr...." class="panel-image">
+                <div class="panel-caption">"It was a pleasure to help you, Mr. Owl," said Mr. Pinpin, his cheeks blushing with happiness under his starry blue hat. "My magic works best when used to help others." Mr. PomPom nodded vigorously, his red cap swaying with the movement. "Yes, and it was so much fun! It was like an adventure from the stories we read!" The owl looked at them tenderly. "You two not only found my glasses, but you brightened my morning with your kindness."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="17_Screenshot_2025-08-03_at_15.13.10.png" alt=""Before you go," said the Wise Owl with a mysterio..." class="panel-image">
+                <div class="panel-caption">"Before you go," said the Wise Owl with a mysterious tone, "I want to share with you a secret I learned many years ago." The hedgehog brothers drew closer, their eyes shining with curiosity. "True magic," continued the owl, adjusting his glasses, "doesn't come only from wands or spells. It comes from the heart. Mr. Pinpin, your wand is powerful because your desire to help is genuine. And Mr. PomPom, your support and joy multiply any magic. Never forget this."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="18_Screenshot_2025-08-03_at_15.13.12.png" alt="The sun was already higher in the sky, bathing the..." class="panel-image">
+                <div class="panel-caption">The sun was already higher in the sky, bathing the forest in an even brighter golden light. The Wise Owl looked around with delight. "Ah, how beautiful it is to see every leaf, every flower, every ray of sunshine," he sighed happily. "And the most beautiful thing I see are two noble hearts in two small hedgehog bodies." Mr. Pinpin and Mr. PomPom exchanged glances full of happiness. They had gone out for a walk that morning and ended up making a new friend and living a true magical adventure.</div>
+            </div>
+            <div class="comic-panel">
+                <img src="19_Screenshot_2025-08-03_at_15.13.17.png" alt=""You know," said the Wise Owl as the three enjoyed..." class="panel-image">
+                <div class="panel-caption">"You know," said the Wise Owl as the three enjoyed the beautiful morning together, "I have a library full of magical books in my oak tree. Now that I can see again, I would love to share some stories with you. Would you like to visit me from time to time?" The brothers' eyes lit up with excitement. "Yes, yes, yes!" exclaimed Mr. PomPom, hopping up and down. "I love magical stories." Mr. Pinpin nodded enthusiastically. "And maybe I can learn new spells to help more forest friends."</div>
+            </div>
+            <div class="comic-panel">
+                <img src="20_Screenshot_2025-08-03_at_15.13.25.png" alt=""Then it's a promise," declared the Wise Owl solem..." class="panel-image">
+                <div class="panel-caption">"Then it's a promise," declared the Wise Owl solemnly, extending his right wing. "I, the Wise Owl of the Great Oak, promise to be your friend forever. My home will always be open to you, and I will gladly share my wisdom and stories." Mr. Pinpin and Mr. PomPom extended their little paws to touch the owl's wing in a gesture of eternal friendship. "And we promise to visit you and be your friends forever," said the brothers in unison. The forest seemed to shine even brighter, as if nature itself was celebrating this new friendship.</div>
+            </div>
+            <div class="comic-panel hero-panel">
+                <img src="21_Screenshot_2025-08-03_at_15.13.45.png" alt="And so, on that beautiful golden morning in the En..." class="panel-image">
+                <div class="panel-caption">And so, on that beautiful golden morning in the Enchanted Forest, a friendship was born that would last forever. Mr. Pinpin put away his magic wand, which now glowed with a warmer light, knowing he had used his power for something truly special. Mr. PomPom couldn't stop smiling, excited about all the stories they would hear in the future. And the Wise Owl, with his golden glasses firmly in place, knew he had gained something more valuable than sight: he had found true friends. The sun continued its journey across the sky, but in the hearts of the three friends, it would always be that magical morning when kindness, magic, and friendship came together in an unforgettable adventure. The End.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
